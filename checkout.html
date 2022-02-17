@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>WOMAZING</title>
+</head>
+<body>
+    
+    <header class="header" id="header">
+        <div class="container">
+            <div class="head pt-5 pb-5">
+                <div class="row align-items-center">
+                    <div class="col-7  col-sm-9 col-lg-2">
+                        <div class="logo">
+                            <img src="img/logo/logoheader.svg" alt="WOMAZING" class="logotip">
+                        </div> 
+                    </div> 
+                    <div class="col-2 col-sm-1 col-lg-5 offset-0 offset-lg-1">
+                        <div class="menu-btn position-relative d-block d-lg-none">
+                            <span class="hamburger"></span>
+                        </div>
+                        <ul class="menu d-flex justify-content-between d-none d-lg-flex">
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__item-link">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="shop.html" class="menu__item-link">Магазин</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__item-link">О бренде</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="contacts.html" class="menu__item-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3 col-sm-2 col-lg-3 offset-0 offset-lg-1">
+                        <div class="account d-flex justify-content-end">
+                            <button type="button" class="call"><div class="tel_img me-2"></div></button><a href="tel:+74958235412" class="telephone d-none d-lg-block">+7 (495) 823-54-12</a>
+                            <a href="basket.html" class="basket position-relative ms-md-4 text-center"> <p class="basket-quantity d-block">2</p>  <img src="img/icon/basket.svg" alt="basket"></a>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </header>
+    <section class="title-checkout">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="offer offer-title-about">
+                        <h1 class="offer__head mt-0">Магазин</h1>
+                        <p class="offer__text text-start"><a class="offer__site">Главная</a> - <a class="offer__site offer__site_active">Оформление заказа</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="invoice">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <form action="#" class="info-invoice" id="invoice-form">
+                        <div class="input-group mb-5">
+                            <h3 class="info-invoice__header mb-4">Данные покупателя</h3>
+                            <input type="name" name="name" id="info-invoice__name" class="info-invoice__input mb-4" placeholder="Имя" required="required">
+                            <input type="email" name="email" id="info-invoice__email" class="info-invoice__input mb-4" placeholder="e-mail" required="required">
+                            <input type="tel" name="telephoneNumber" id="info-invoice__tel" class="info-invoice__input mb-4" placeholder="Телефон" required="required">
+                        </div>
+                        <div class="input-group mb-4">
+                            <h3 class="info-invoice__header mb-4">Адрес получателя</h3>
+                            <input type="text" name="сountry" id="info-invoice__сountry" class="info-invoice__input mb-4" placeholder="Страна" required="required">
+                            <input type="text" name="сity" id="info-invoice__сity" class="info-invoice__input mb-4" placeholder="Город" required="required">
+                            <input type="text" name="street" id="info-invoice__street" class="info-invoice__input mb-4" placeholder="Улица" required="required">
+                            <input type="text" name="house" id="info-invoice__house" class="info-invoice__input mb-4" placeholder="Дом" required="required">
+                            <input type="text" name="flat" id="info-invoice__flat" class="info-invoice__input mb-4" placeholder="Квартира" required="required">
+                        </div>
+                        <div class="input-group d-flex flex-column mb-5">
+                            <h3 class="info-invoice__header mb-3">Комментарии</h3>
+                            <textarea name="message" id="" resize="none" placeholder="Сообщение" class="call-back__input message-text mb-3"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 offset-md-0 offset-lg-3">
+                    <div class="gen-info">
+                        <h3 class="mb-5">Ваш заказ</h3>
+                        <div class="name-col d-flex mb-4"><h4 class="product-name">Товар</h4><h4 class="product-col">Всего</h4></div>
+                        <div class="name-col mb-4"><span class="product-name d-inline-block">Футболка USA</span><span class="product-col">$129</span></div>
+                        <div class="name-col mb-4"><span class="product-name d-inline-block">Подытог</span><span class="product-col">$129</span></div>
+                        <div class="name-col name-col-result mb-4"><span class="product-name d-inline-block">Итого</span><span class="product-col">$129</span></div>
+                    </div>
+                    <div class="pay-method">
+                        <h3 class="pay-method__header mb-5">Способы оплаты</h3>
+                        <div class="form-check align-items-center mb-5">
+                            <input class="form-check-input check-pay-method me-2" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Оплата наличными
+                            </label>
+                        </div>
+                        <button form="invoice-form" class="btn-form">Разместить заказ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-xl-3 order-4 order-sm-2 order-md-0 mt-5 mt-md-0">
+                    <div class="copyright d-flex flex-column justify-content-between align-items-center align-items-sm-start">
+                        <div class="copyright__logo">
+                            <img src="img/logo/logoheader.svg" alt="WOMAZING" class="logotip">
+                        </div>
+                        <div class="copyright__text mt-5">
+                            <p class="copyr mb-2">© Все права защищены</p>
+                            <p class="copyr mb-2">Политика конфиденциальности</p>
+                            <p class="copyr">Публичная оферта</p> 
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-xl-5 order-1 offset-md-0 d-none d-xl-block">
+                    <ul class="menu d-none d-sm-flex justify-content-between align-items-center align-items-sm-start">
+                        <li class="menu__item">
+                            <a href="index.html" class="menu__item-link">Главная</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="shop.html" class="menu__item-link">Магазин</a>
+                            <ul class="sub-menu  mt-4">
+                                <li class="sub-menu__item mb-2"><a href="#" class="sub-menu__link">Пальто</a></li>
+                                <li class="sub-menu__item mb-2"><a href="#" class="sub-menu__link">Свитшоты</a></li>
+                                <li class="sub-menu__item mb-2"><a href="#" class="sub-menu__link">Кардиганы</a></li>
+                                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Толстовки</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__item-link">О бренде</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contacts.html" class="menu__item-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-2 order-2 order-sm-3 offset-0 offset-xl-2 mt-5 mt-md-0">
+                    <div class="contacts">
+                        <div class="contacts__fast-contact d-flex flex-column align-items-center align-items-md-end">
+                            <a href="tel:+74958235412" class="mb-2"><span class="telephone">+7 (495) 823-54-12</span></a>
+                            <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+                        </div>
+                        <div class="contacts__soc-club mt-4 mb-4 d-flex justify-content-center justify-content-md-end">
+                            <!-- noindex -->
+                            <a href="#" class="contacts__soc-item me-3"><img src="img/icon/instagramIcon.svg" alt=""></a>
+                            <a href="#" class="contacts__soc-item me-3"><img src="img/icon/facebookIcon.svg" alt=""></a>
+                            <a href="#" class="contacts__soc-item"><img src="img/icon/twitterIcon.svg" alt=""></a>
+                            <!--/ noindex -->
+                        </div>
+                        <div class="contacts__pay d-flex justify-content-center justify-content-md-end">
+                            <a href="#"><img src="img/icon/visa-mastercard.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

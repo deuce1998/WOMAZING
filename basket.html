@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>WOMAZING</title>
+</head>
+<body>
+    
+    <header class="header" id="header">
+        <div class="container">
+            <div class="head pt-5 pb-5">
+                <div class="row align-items-center">
+                    <div class="col-7  col-sm-9 col-lg-2">
+                        <div class="logo">
+                            <img src="img/logo/logoheader.svg" alt="WOMAZING" class="logotip">
+                        </div> 
+                    </div> 
+                    <div class="col-2 col-sm-1 col-lg-5 offset-0 offset-lg-1">
+                        <div class="menu-btn position-relative d-block d-lg-none">
+                            <span class="hamburger"></span>
+                        </div>
+                        <ul class="menu d-flex justify-content-between d-none d-lg-flex">
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__item-link">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="shop.html" class="menu__item-link">Магазин</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__item-link">О бренде</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="contacts.html" class="menu__item-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-3 col-sm-2 col-lg-3 offset-0 offset-lg-1">
+                        <div class="account d-flex justify-content-end">
+                            <button type="button" class="call"><div class="tel_img me-2"></div></button><a href="tel:+74958235412" class="telephone d-none d-lg-block">+7 (495) 823-54-12</a>
+                            <a href="basket.html" class="basket position-relative ms-md-4 text-center"> <p class="basket-quantity d-block">2</p>  <img src="img/icon/basket.svg" alt="basket"></a>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </header>
+    <section class="title-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="offer offer-title-about">
+                        <h1 class="offer__head mt-0">Магазин</h1>
+                        <p class="offer__text text-start"><a class="offer__site">Главная</a> - <a class="offer__site offer__site_active">Корзина</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="all-product">
+                        <div class="basket-menu d-flex">
+                            <p class="basket-menu__item basket-menu__item-product">Товар</p>
+                            <p class="basket-menu__item basket-menu__item-price">Цена</p>
+                            <p class="basket-menu__item basket-menu__item-count">Количество</p>
+                            <p class="basket-menu__item basket-menu__item-all">Всего</p>
+                        </div>
+                        <div class="basket-product-wrapper d-flex pt-5 pb-5 align-items-center">
+                            <div class="basket-menu__item-product d-flex align-items-center">
+                                <button type="button" class="btn-close del-basket-item me-5" aria-label="Close"></button>
+                                <img src="img/collection/new/photo1.jpg" alt="" class="basket-item-img me-4">
+                                <p class="basket-item-text mb-0">Футболка USA</p>
+                            </div>
+                            <div class="basket-menu__item-price">
+                                <span class="basket-price">$129</span>
+                            </div>
+                            <div class="basket-menu__item-count">
+                                <div class="basket-count">
+                                    1
+                                </div>
+                            </div>
+                            <div class="basket-menu__item-all">
+                                <span class="basket-price">$129</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-end">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <input type="text" name="coupon" id="call-back__coupon" class="call-back__input call-back__input-coupon form-item-basket me-3" placeholder="Введите купон" required="required">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <button class="card-btn form-item-basket d-block" type="submit">Применить купон</button>
+                    </div>
+                    <div class="col-12 col-xl-3 col-lg-4 offset-0 offset-xl-3">
+                        <button type="button" class="card-btn form-item-basket d-block ms-0 ms-xl-auto">Обновить корзину</button>                          
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-6">
+
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="subtotal-wrapper d-flex">
+                        <p class="subtotal me-4">Подытог:</p>
+                        <span class="subtotal-price">$129</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-6">
+
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="total-wrapper d-flex text-center justify-content-between">
+                        <div class="print-price d-flex">
+                            <p class="me-5 mb-0">Итого:</p><span class="total-price mb-0">$129</span>
+                        </div>
+                        <button type="submit" class="call-back__btn btn-form btn-contact d-block">Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-xl-3 order-4 order-sm-2 order-md-0 mt-5 mt-md-0">
+                    <div class="copyright d-flex flex-column justify-content-between align-items-center align-items-sm-start">
+                        <div class="copyright__logo">
+                            <img src="img/logo/logoheader.svg" alt="WOMAZING" class="logotip">
+                        </div>
+                        <div class="copyright__text mt-5">
+                            <p class="copyr mb-2">© Все права защищены</p>
+                            <p class="copyr mb-2">Политика конфиденциальности</p>
+                            <p class="copyr">Публичная оферта</p> 
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-xl-5 order-1 offset-md-0 d-none d-xl-block">
+                    <ul class="menu d-none d-sm-flex justify-content-between align-items-center align-items-sm-start">
+                        <li class="menu__item">
+                            <a href="index.html" class="menu__item-link">Главная</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="shop.html" class="menu__item-link">Магазин</a>
+                            <ul class="sub-menu  mt-4">
+                                <li class="sub-menu__item mb-2"><a href="#" class="sub-menu__link">Пальто</a></li>
+                                <li class="sub-menu__item mb-2"><a href="#" class="sub-menu__link">Свитшоты</a></li>
+                                <li class="sub-menu__item mb-2"><a href="#" class="sub-menu__link">Кардиганы</a></li>
+                                <li class="sub-menu__item"><a href="#" class="sub-menu__link">Толстовки</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__item-link">О бренде</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contacts.html" class="menu__item-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-2 order-2 order-sm-3 offset-0 offset-xl-2 mt-5 mt-md-0">
+                    <div class="contacts">
+                        <div class="contacts__fast-contact d-flex flex-column align-items-center align-items-md-end">
+                            <a href="tel:+74958235412" class="mb-2"><span class="telephone">+7 (495) 823-54-12</span></a>
+                            <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+                        </div>
+                        <div class="contacts__soc-club mt-4 mb-4 d-flex justify-content-center justify-content-md-end">
+                            <!-- noindex -->
+                            <a href="#" class="contacts__soc-item me-3"><img src="img/icon/instagramIcon.svg" alt=""></a>
+                            <a href="#" class="contacts__soc-item me-3"><img src="img/icon/facebookIcon.svg" alt=""></a>
+                            <a href="#" class="contacts__soc-item"><img src="img/icon/twitterIcon.svg" alt=""></a>
+                            <!--/ noindex -->
+                        </div>
+                        <div class="contacts__pay d-flex justify-content-center justify-content-md-end">
+                            <a href="#"><img src="img/icon/visa-mastercard.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
